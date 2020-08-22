@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zhangjie/Desktop/selfCode/realTime/main.cpp
+iostream
+-
+unistd.h
+-
+cstdlib
+-
+fcntl.h
+-
+
