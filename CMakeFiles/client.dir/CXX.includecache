@@ -6,16 +6,18 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhangjie/Desktop/selfCode/realTime/main.cpp
-netinet/in.h
+/Users/zhangjie/Desktop/selfCode/realTime/client.cpp
+sys/types.h
+-
+iostream
 -
 sys/socket.h
 -
-strings.h
+netinet/in.h
 -
-assert.h
+arpa/inet.h
 -
-iostream
+stdio.h
 -
 unistd.h
 -

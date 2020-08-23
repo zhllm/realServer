@@ -131,6 +131,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named udpSocket
+
+# Build rule for target.
+udpSocket: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 udpSocket
+.PHONY : udpSocket
+
+# fast build rule for target.
+udpSocket/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udpSocket.dir/build.make CMakeFiles/udpSocket.dir/build
+.PHONY : udpSocket/fast
+
+#=============================================================================
+# Target rules for targets named client1111
+
+# Build rule for target.
+client1111: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client1111
+.PHONY : client1111
+
+# fast build rule for target.
+client1111/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client1111.dir/build.make CMakeFiles/client1111.dir/build
+.PHONY : client1111/fast
+
+#=============================================================================
 # Target rules for targets named realTime
 
 # Build rule for target.
@@ -142,6 +168,33 @@ realTime: cmake_check_build_system
 realTime/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realTime.dir/build.make CMakeFiles/realTime.dir/build
 .PHONY : realTime/fast
+
+client.o: client.cpp.o
+
+.PHONY : client.o
+
+# target to build an object file
+client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client1111.dir/build.make CMakeFiles/client1111.dir/client.cpp.o
+.PHONY : client.cpp.o
+
+client.i: client.cpp.i
+
+.PHONY : client.i
+
+# target to preprocess a source file
+client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client1111.dir/build.make CMakeFiles/client1111.dir/client.cpp.i
+.PHONY : client.cpp.i
+
+client.s: client.cpp.s
+
+.PHONY : client.s
+
+# target to generate assembly for a file
+client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client1111.dir/build.make CMakeFiles/client1111.dir/client.cpp.s
+.PHONY : client.cpp.s
 
 main.o: main.cpp.o
 
@@ -197,6 +250,33 @@ server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realTime.dir/build.make CMakeFiles/realTime.dir/server.cpp.s
 .PHONY : server.cpp.s
 
+udpSocket.o: udpSocket.cpp.o
+
+.PHONY : udpSocket.o
+
+# target to build an object file
+udpSocket.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udpSocket.dir/build.make CMakeFiles/udpSocket.dir/udpSocket.cpp.o
+.PHONY : udpSocket.cpp.o
+
+udpSocket.i: udpSocket.cpp.i
+
+.PHONY : udpSocket.i
+
+# target to preprocess a source file
+udpSocket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udpSocket.dir/build.make CMakeFiles/udpSocket.dir/udpSocket.cpp.i
+.PHONY : udpSocket.cpp.i
+
+udpSocket.s: udpSocket.cpp.s
+
+.PHONY : udpSocket.s
+
+# target to generate assembly for a file
+udpSocket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udpSocket.dir/build.make CMakeFiles/udpSocket.dir/udpSocket.cpp.s
+.PHONY : udpSocket.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -205,13 +285,21 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... client1111"
 	@echo "... realTime"
+	@echo "... udpSocket"
+	@echo "... client.o"
+	@echo "... client.i"
+	@echo "... client.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
+	@echo "... udpSocket.o"
+	@echo "... udpSocket.i"
+	@echo "... udpSocket.s"
 .PHONY : help
 
 

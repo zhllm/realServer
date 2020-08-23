@@ -73,6 +73,8 @@ CMAKE_BINARY_DIR = /Users/zhangjie/Desktop/selfCode/realTime/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/udpSocket.dir/all
+all: CMakeFiles/client1111.dir/all
 all: CMakeFiles/realTime.dir/all
 
 .PHONY : all
@@ -83,9 +85,65 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/udpSocket.dir/clean
+clean: CMakeFiles/client1111.dir/clean
 clean: CMakeFiles/realTime.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/udpSocket.dir
+
+# All Build rule for target.
+CMakeFiles/udpSocket.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udpSocket.dir/build.make CMakeFiles/udpSocket.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udpSocket.dir/build.make CMakeFiles/udpSocket.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhangjie/Desktop/selfCode/realTime/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target udpSocket"
+.PHONY : CMakeFiles/udpSocket.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/udpSocket.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangjie/Desktop/selfCode/realTime/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/udpSocket.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangjie/Desktop/selfCode/realTime/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/udpSocket.dir/rule
+
+# Convenience name for target.
+udpSocket: CMakeFiles/udpSocket.dir/rule
+
+.PHONY : udpSocket
+
+# clean rule for target.
+CMakeFiles/udpSocket.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udpSocket.dir/build.make CMakeFiles/udpSocket.dir/clean
+.PHONY : CMakeFiles/udpSocket.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/client1111.dir
+
+# All Build rule for target.
+CMakeFiles/client1111.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client1111.dir/build.make CMakeFiles/client1111.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client1111.dir/build.make CMakeFiles/client1111.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhangjie/Desktop/selfCode/realTime/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target client1111"
+.PHONY : CMakeFiles/client1111.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/client1111.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangjie/Desktop/selfCode/realTime/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/client1111.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangjie/Desktop/selfCode/realTime/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/client1111.dir/rule
+
+# Convenience name for target.
+client1111: CMakeFiles/client1111.dir/rule
+
+.PHONY : client1111
+
+# clean rule for target.
+CMakeFiles/client1111.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client1111.dir/build.make CMakeFiles/client1111.dir/clean
+.PHONY : CMakeFiles/client1111.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/realTime.dir
@@ -94,7 +152,7 @@ clean: CMakeFiles/realTime.dir/clean
 CMakeFiles/realTime.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realTime.dir/build.make CMakeFiles/realTime.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realTime.dir/build.make CMakeFiles/realTime.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhangjie/Desktop/selfCode/realTime/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target realTime"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhangjie/Desktop/selfCode/realTime/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target realTime"
 .PHONY : CMakeFiles/realTime.dir/all
 
 # Build rule for subdir invocation for target.
